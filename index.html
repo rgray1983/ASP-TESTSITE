@@ -64,10 +64,33 @@
       --cream: #F3EDE3;
       --charcoal: #2E2E2E;
     }
+
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
     body {
       background-color: var(--navy);
       font-family: sans-serif;
       color: var(--cream);
+    }
+
+    /* Swiper sizing safety */
+    .swiper {
+      width: 100% !important;
+    }
+    .swiper-wrapper {
+      width: 100% !important;
+    }
+    .swiper-slide {
+      width: 100% !important;
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover;
     }
   </style>
 </head>
@@ -94,12 +117,19 @@
       Request a Quote
     </a>
 
-    <!-- Mobile menu button -->
-    <button id="mobile-menu-button" class="lg:hidden inline-flex items-center justify-center p-2 rounded-md border border-[var(--navy)] text-[var(--navy)]">
-      <span class="sr-only">Open main menu</span>
-      <span class="block w-5 h-[2px] bg-[var(--navy)] mb-1"></span>
-      <span class="block w-5 h-[2px] bg-[var(--navy)] mb-1"></span>
-      <span class="block w-5 h-[2px] bg-[var(--navy)]"></span>
+    <!-- Mobile menu button (SVG icon) -->
+    <button
+      id="mobile-menu-button"
+      class="lg:hidden inline-flex items-center justify-center p-2 rounded-md border border-[var(--navy)] text-[var(--navy)]"
+      aria-label="Toggle navigation"
+      type="button"
+    >
+      <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <line x1="3" y1="12" x2="21" y2="12" />
+        <line x1="3" y1="18" x2="21" y2="18" />
+      </svg>
     </button>
   </div>
 
@@ -120,7 +150,11 @@
 <!-- WELCOME / LOGO HERO TOPPER -->
 <section class="pt-8 pb-4 text-center px-4">
   <p class="font-bold text-base sm:text-lg tracking-wide">WE ARE</p>
-  <img src="images/asp-logo-we-are.png" alt="AmeriServ Logo Large" class="h-40 sm:h-48 md:h-56 mx-auto mt-3">
+  <img
+    src="images/asp-logo-we-are.png"
+    alt="AmeriServ Logo Large"
+    class="max-w-full w-auto h-32 sm:h-40 md:h-48 lg:h-56 mx-auto mt-3"
+  >
 
   <!-- subtle divider line -->
   <div class="h-px w-40 sm:w-48 bg-[var(--cream)] opacity-30 mx-auto mt-6"></div>
@@ -148,22 +182,20 @@
     </div>
 
     <div class="mt-4 md:mt-0">
-      <div class="swiper rounded-lg shadow-lg overflow-hidden">
+      <!-- Fixed-height, responsive slider container for mobile stability -->
+      <div class="swiper h-64 sm:h-72 md:h-80 lg:h-96 rounded-lg shadow-lg overflow-hidden">
         <div class="swiper-wrapper">
-	      <div class="swiper-slide">
-            <img src="images/bc-mockup.jpg" class="w-full h-full object-cover" alt="Business Card Mockup" />
-          </div>  
           <div class="swiper-slide">
-            <img src="images/hero-2.jpg" class="w-full h-full object-cover" alt="Printed materials on display" />
+            <img src="images/hero-2.jpg" alt="Printed materials on display" />
           </div>
           <div class="swiper-slide">
-            <img src="images/hero-brochure.jpg" class="w-full h-full object-cover" alt="Brochure design example" />
+            <img src="images/hero-brochure.jpg" alt="Brochure design example" />
           </div>
           <div class="swiper-slide">
-            <img src="images/hero-wedding.jpg" class="w-full h-full object-cover" alt="Wedding invitations and stationery" />
+            <img src="images/hero-wedding.jpg" alt="Wedding invitations and stationery" />
           </div>
           <div class="swiper-slide">
-            <img src="images/hero-opt.jpg" class="w-full h-full object-cover" alt="Custom printed promotional items" />
+            <img src="images/hero-opt.jpg" alt="Custom printed promotional items" />
           </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -189,56 +221,56 @@
 
   <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12 text-center">
     <div class="flex flex-col items-center gap-2">
-      <div class="w-40 h-40 sm:w-48 sm:h-48 bg-[var(--cream)] rounded-full overflow-hidden flex items-center justify-center">
+      <div class="w-32 h-32 sm:w-40 sm:h-40 bg-[var(--cream)] rounded-full overflow-hidden flex items-center justify-center">
         <img src="images/service-bc.jpg" class="w-full h-full object-cover rounded-full" alt="Business cards and stationery">
       </div>
       <p class="font-semibold mt-2 text-sm sm:text-base">Business Cards &amp; Stationery</p>
     </div>
 
     <div class="flex flex-col items-center gap-2">
-      <div class="w-40 h-40 sm:w-48 sm:h-48 bg-[var(--cream)] rounded-full overflow-hidden flex items-center justify-center">
+      <div class="w-32 h-32 sm:w-40 sm:h-40 bg-[var(--cream)] rounded-full overflow-hidden flex items-center justify-center">
         <img src="images/services-forms.jpg" class="w-full h-full object-cover rounded-full" alt="Forms and office printing">
       </div>
       <p class="font-semibold mt-2 text-sm sm:text-base">Forms &amp; Office</p>
     </div>
 
     <div class="flex flex-col items-center gap-2">
-      <div class="w-40 h-40 sm:w-48 sm:h-48 bg-[var(--cream)] rounded-full overflow-hidden flex items-center justify-center">
+      <div class="w-32 h-32 sm:w-40 sm:h-40 bg-[var(--cream)] rounded-full overflow-hidden flex items-center justify-center">
         <img src="images/services-brochure.jpg" class="w-full h-full object-cover rounded-full" alt="Brochures and pamphlets">
       </div>
       <p class="font-semibold mt-2 text-sm sm:text-base">Brochures &amp; Pamphlets</p>
     </div>
 
     <div class="flex flex-col items-center gap-2">
-      <div class="w-40 h-40 sm:w-48 sm:h-48 bg-[var(--cream)] rounded-full overflow-hidden flex items-center justify-center">
+      <div class="w-32 h-32 sm:w-40 sm:h-40 bg-[var(--cream)] rounded-full overflow-hidden flex items-center justify-center">
         <img src="images/services-events.jpg" class="w-full h-full object-cover rounded-full" alt="Event and wedding printing">
       </div>
       <p class="font-semibold mt-2 text-sm sm:text-base">Events &amp; Weddings</p>
     </div>
 
     <div class="flex flex-col items-center gap-2">
-      <div class="w-40 h-40 sm:w-48 sm:h-48 bg-[var(--cream)] rounded-full overflow-hidden flex items-center justify-center">
+      <div class="w-32 h-32 sm:w-40 sm:h-40 bg-[var(--cream)] rounded-full overflow-hidden flex items-center justify-center">
         <img src="images/services-signs.jpg" class="w-full h-full object-cover rounded-full" alt="Signs and calendars">
       </div>
       <p class="font-semibold mt-2 text-sm sm:text-base">Signs &amp; Calendars</p>
     </div>
 
     <div class="flex flex-col items-center gap-2">
-      <div class="w-40 h-40 sm:w-48 sm:h-48 bg-[var(--cream)] rounded-full overflow-hidden flex items-center justify-center">
+      <div class="w-32 h-32 sm:w-40 sm:h-40 bg-[var(--cream)] rounded-full overflow-hidden flex items-center justify-center">
         <img src="images/services-labels.jpg" class="w-full h-full object-cover rounded-full" alt="Labels and stickers">
       </div>
       <p class="font-semibold mt-2 text-sm sm:text-base">Labels &amp; Stickers</p>
     </div>
 
     <div class="flex flex-col items-center gap-2">
-      <div class="w-40 h-40 sm:w-48 sm:h-48 bg-[var(--cream)] rounded-full overflow-hidden flex items-center justify-center">
+      <div class="w-32 h-32 sm:w-40 sm:h-40 bg-[var(--cream)] rounded-full overflow-hidden flex items-center justify-center">
         <img src="images/services-church.jpg" class="w-full h-full object-cover rounded-full" alt="Church and nonprofit printing">
       </div>
       <p class="font-semibold mt-2 text-sm sm:text-base">Church &amp; Nonprofit</p>
     </div>
 
     <div class="flex flex-col items-center gap-2">
-      <div class="w-40 h-40 sm:w-48 sm:h-48 bg-[var(--cream)] rounded-full overflow-hidden flex items-center justify-center">
+      <div class="w-32 h-32 sm:w-40 sm:h-40 bg-[var(--cream)] rounded-full overflow-hidden flex items-center justify-center">
         <img src="images/services-custom.jpg" class="w-full h-full object-cover rounded-full" alt="Custom printing projects">
       </div>
       <p class="font-semibold mt-2 text-sm sm:text-base">Custom Projects</p>
@@ -310,7 +342,6 @@
     loop: true,
     effect: 'fade',
     fadeEffect: { crossFade: true },
-    autoHeight: true,
     autoplay: { delay: 3000 },
     pagination: { el: '.swiper-pagination', clickable: true },
   });
