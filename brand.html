@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>AmeriServ Brand Kit – Identity & Guidelines</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --navy: #0A2342;
+      --red: #B22222;
+      --cream: #F3EDE3;
+      --charcoal: #2E2E2E;
+    }
+
+    body {
+      background-color: var(--navy);
+      color: var(--cream);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Thin scrollbar for a nicer feel */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.3);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 999px;
+    }
+  </style>
+</head>
+
+<body class="bg-[var(--navy)] text-[var(--cream)]">
+
+  <!-- TOP BAR -->
+  <header class="border-b border-white/10 bg-[var(--navy)]/95 backdrop-blur sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img
+          src="images/asp-logo-mark.png"
+          alt="AmeriServ Logo"
+          class="h-12 w-auto"
+        />
+        <div class="flex flex-col leading-tight">
+          <span class="text-xs uppercase tracking-[0.22em] text-[var(--cream)]/70">
+            Brand Guidelines
+          </span>
+          <span class="font-semibold text-sm sm:text-base">
+            AmeriServ – Print & Promotional Products
+          </span>
+        </div>
+      </div>
+
+      <div class="hidden sm:flex items-center gap-3 text-xs text-[var(--cream)]/70">
+        <span>Hartsville, South Carolina</span>
+        <span class="opacity-40">•</span>
+        <span>Est. 1977</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN LAYOUT -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12 flex flex-col lg:flex-row gap-10">
+
+    <!-- QUICK LINKS NAV -->
+    <aside class="lg:w-64 lg:flex-shrink-0">
+      <!-- Mobile “chips” nav -->
+      <div class="mb-4 lg:hidden">
+        <p class="text-xs uppercase tracking-[0.22em] text-[var(--cream)]/60 mb-2">
+          Sections
+        </p>
+        <div class="flex flex-wrap gap-2 text-xs">
+          <a href="#overview" class="px-3 py-1 rounded-full border border-white/20 hover:bg-white/10">
+            01 Overview
+          </a>
+          <a href="#values" class="px-3 py-1 rounded-full border border-white/20 hover:bg-white/10">
+            02 Values & Personality
+          </a>
+          <a href="#logos" class="px-3 py-1 rounded-full border border-white/20 hover:bg-white/10">
+            03 Logos
+          </a>
+          <a href="#color" class="px-3 py-1 rounded-full border border-white/20 hover:bg-white/10">
+            04 Color
+          </a>
+          <a href="#typography" class="px-3 py-1 rounded-full border border-white/20 hover:bg-white/10">
+            05 Typography
+          </a>
+          <a href="#visuals" class="px-3 py-1 rounded-full border border-white/20 hover:bg-white/10">
+            06 Visual Style
+          </a>
+          <a href="#assets" class="px-3 py-1 rounded-full border border-white/20 hover:bg-white/10">
+            07 Assets
+          </a>
+        </div>
+      </div>
+
+      <!-- Desktop sidebar nav -->
+      <nav class="hidden lg:block sticky top-24 text-sm">
+        <p class="text-xs uppercase tracking-[0.22em] text-[var(--cream)]/60 mb-3">
+          Quick Links
+        </p>
+        <ul class="space-y-2">
+          <li>
+            <a href="#overview" class="block py-1 text-[var(--cream)] hover:text-[var(--red)]">
+              <span class="text-[var(--cream)]/50 mr-2">01</span> Brand Overview
+            </a>
+          </li>
+          <li>
+            <a href="#values" class="block py-1 text-[var(--cream)] hover:text-[var(--red)]">
+              <span class="text-[var(--cream)]/50 mr-2">02</span> Values & Personality
+            </a>
+          </li>
+          <li>
+            <a href="#logos" class="block py-1 text-[var(--cream)] hover:text-[var(--red)]">
+              <span class="text-[var(--cream)]/50 mr-2">03</span> Logos & Usage
+            </a>
+          </li>
+          <li>
+            <a href="#color" class="block py-1 text-[var(--cream)] hover:text-[var(--red)]">
+              <span class="text-[var(--cream)]/50 mr-2">04</span> Color System
+            </a>
+          </li>
+          <li>
+            <a href="#typography" class="block py-1 text-[var(--cream)] hover:text-[var(--red)]">
+              <span class="text-[var(--cream)]/50 mr-2">05</span> Typography
+            </a>
+          </li>
+          <li>
+            <a href="#visuals" class="block py-1 text-[var(--cream)] hover:text-[var(--red)]">
+              <span class="text-[var(--cream)]/50 mr-2">06</span> Visual Style
+            </a>
+          </li>
+          <li>
+            <a href="#assets" class="block py-1 text-[var(--cream)] hover:text-[var(--red)]">
+              <span class="text-[var(--cream)]/50 mr-2">07</span> Assets & Contact
+            </a>
+          </li>
+        </ul>
+
+        <div class="mt-8 pt-6 border-t border-white/10 text-xs text-[var(--cream)]/60">
+          <p class="mb-1 font-semibold text-[var(--cream)]/80">AmeriServ</p>
+          <p>Print & Promotional Products</p>
+          <p>121 Darlington Ave, Hartsville, SC 29550</p>
+          <p>843-383-5151</p>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- CONTENT COLUMN -->
+    <section class="flex-1 space-y-24">
+
+      <!-- 01 OVERVIEW -->
+      <section id="overview" class="scroll-mt-24">
+        <p class="text-xs uppercase tracking-[0.3em] text-[var(--cream)]/60 mb-2">
+          01
+        </p>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+          Brand Overview
+        </h1>
+
+        <p class="text-[var(--cream)]/80 text-base sm:text-lg max-w-2xl mb-6">
+          AmeriServ is a full-service print and promotional products company dedicated
+          to helping businesses, organizations, and families communicate and celebrate
+          with quality printing, exceptional service, and small-town care. Proudly
+          serving Hartsville and the surrounding community since 1977, we believe every
+          printed piece carries a story — and we’re honored to help bring those stories to life.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+          <div class="space-y-4">
+            <h2 class="text-lg font-semibold">Mission</h2>
+            <p class="text-sm sm:text-base text-[var(--cream)]/80">
+              To deliver high-quality printing and promotional products with personal
+              service and community-focused care, helping our customers share their
+              message with impact.
+            </p>
+
+            <h2 class="text-lg font-semibold mt-6">Vision</h2>
+            <p class="text-sm sm:text-base text-[var(--cream)]/80">
+              To be the most trusted print partner in the region, known for craftsmanship,
+              reliability, and relationships built on service and integrity.
+            </p>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+            <p class="text-xs uppercase tracking-[0.22em] text-[var(--cream)]/60 mb-3">
+              Brand Promise
+            </p>
+            <p class="text-lg sm:text-xl font-semibold">
+              Your small-town partner
+              <span class="block">for big-time printed impact.</span>
+            </p>
+            <p class="mt-4 text-sm text-[var(--cream)]/75">
+              Whether it’s a first business card, church tithing envelopes, a wedding
+              invitation suite, or a custom sign for Main Street — AmeriServ shows up
+              with the same level of care, craft, and commitment.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 VALUES & PERSONALITY -->
+      <section id="values" class="scroll-mt-24">
+        <p class="text-xs uppercase tracking-[0.3em] text-[var(--cream)]/60 mb-2">
+          02
+        </p>
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+          Values & Personality
+        </h2>
+
+        <p class="text-[var(--cream)]/80 text-sm sm:text-base max-w-2xl mb-6">
+          AmeriServ is like the neighbor everyone trusts with their important
+          projects — warm, steady, and proud of a job well done. Our values and voice
+          guide how we design, write, and serve.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="space-y-4">
+            <h3 class="text-lg font-semibold mb-2">Brand Values</h3>
+            <ul class="space-y-2 text-sm sm:text-base text-[var(--cream)]/85">
+              <li><strong>Craftsmanship</strong> – Every detail matters; quality you can see and feel.</li>
+              <li><strong>Service</strong> – Real people, real support, real care.</li>
+              <li><strong>Community</strong> – Supporting local businesses, churches, schools, and families.</li>
+              <li><strong>Reliability</strong> – Dependable turnaround and consistent results.</li>
+            </ul>
+
+            <h3 class="text-lg font-semibold mt-6 mb-2">Brand Traits</h3>
+            <ul class="space-y-2 text-sm sm:text-base text-[var(--cream)]/80">
+              <li>• Warm & neighborly</li>
+              <li>• Professional & dependable</li>
+              <li>• Community-focused</li>
+              <li>• Helpful & solution-oriented</li>
+            </ul>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-xl p-6 space-y-4">
+            <h3 class="text-sm font-semibold tracking-wide text-[var(--cream)]/80 mb-2">
+              Voice Guidelines
+            </h3>
+            <ul class="space-y-2 text-sm sm:text-base text-[var(--cream)]/80">
+              <li>• Speak like a real person, not a script.</li>
+              <li>• Focus on the customer’s event, goal, or milestone.</li>
+              <li>• Be clear, encouraging, and straightforward.</li>
+              <li>• Avoid jargon and overly “salesy” language.</li>
+            </ul>
+
+            <div class="text-sm sm:text-base space-y-3 pt-2 border-t border-white/10 mt-4">
+              <div>
+                <p class="text-[var(--cream)]/50 text-xs uppercase mb-1">
+                  Sounds like AmeriServ
+                </p>
+                <p>“From first draft to final print, we’re here to make this easy.”</p>
+              </div>
+              <div>
+                <p class="text-[var(--cream)]/50 text-xs uppercase mb-1">
+                  Not our style
+                </p>
+                <p class="text-[var(--cream)]/70">
+                  “Act now! Limited-time print offer you can’t afford to miss!!!”
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 LOGOS -->
+      <section id="logos" class="scroll-mt-24">
+        <p class="text-xs uppercase tracking-[0.3em] text-[var(--cream)]/60 mb-2">
+          03
+        </p>
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+          Logos & Usage
+        </h2>
+
+        <p class="text-[var(--cream)]/80 text-sm sm:text-base max-w-2xl mb-6">
+          The AmeriServ logo is the primary expression of our brand. It should always
+          appear clear, legible, and uncompromised. Use only the approved artwork files
+          provided in the logo package.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+          <div class="space-y-4">
+            <div class="bg-white border border-white/10 rounded-xl p-6 flex items-center justify-center">
+              <!-- Primary logo preview -->
+              <img
+                src="images/asp-logo-guides.png"
+                alt="AmeriServ Primary Logo"
+                class="max-h-30 w-auto"
+              />
+            </div>
+
+            <div class="bg-white/5 border border-white/10 rounded-xl p-5 text-sm text-[var(--cream)]/80">
+              <h3 class="text-sm font-semibold text-[var(--cream)] mb-2">
+                Clear Space
+              </h3>
+              <p>
+                Leave at least one “A” width of space around the logo on all sides.
+                This protects legibility and impact, especially at smaller sizes.
+              </p>
+              <h3 class="text-sm font-semibold text-[var(--cream)] mt-4 mb-2">
+                Minimum Size
+              </h3>
+              <p>Print: 1.25&quot; wide · Digital: 150px wide</p>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <h3 class="text-lg font-semibold mb-2">Do / Don’t</h3>
+            <div class="grid sm:grid-cols-2 gap-4 text-sm">
+              <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+                <p class="text-[var(--cream)]/60 text-xs uppercase mb-1">
+                  Do
+                </p>
+                <ul class="space-y-1 text-[var(--cream)]/85">
+                  <li>• Use approved logo files</li>
+                  <li>• Keep colors true to the palette</li>
+                  <li>• Maintain clear space</li>
+                  <li>• Place on solid, high-contrast backgrounds</li>
+                </ul>
+              </div>
+              <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+                <p class="text-[var(--cream)]/60 text-xs uppercase mb-1">
+                  Don’t
+                </p>
+                <ul class="space-y-1 text-[var(--cream)]/75">
+                  <li>• Don’t stretch or squash</li>
+                  <li>• Don’t recolor arbitrarily</li>
+                  <li>• Don’t add drop shadows or outlines</li>
+                  <li>• Don’t place over busy images</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-white/5 border border-dashed border-white/20 rounded-xl p-4 text-xs sm:text-sm text-[var(--cream)]/70">
+              <p class="font-semibold text-[var(--cream)] mb-1">
+                File Formats
+              </p>
+              <p>
+                Logos are provided as SVG and PNG for digital use, and AI/EPS for
+                print production. Always start from vector files when sending artwork
+                to other printers or vendors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 COLOR -->
+      <section id="color" class="scroll-mt-24">
+        <p class="text-xs uppercase tracking-[0.3em] text-[var(--cream)]/60 mb-2">
+          04
+        </p>
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+          Color System
+        </h2>
+
+        <p class="text-[var(--cream)]/80 text-sm sm:text-base max-w-2xl mb-6">
+          AmeriServ’s palette is built around a modern Americana feel — deep navy,
+          heritage red, warm cream, and grounded charcoal. Use these consistently for
+          brand recognition across print and digital.
+        </p>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+          <!-- Navy -->
+          <div class="rounded-xl overflow-hidden border border-white/10">
+            <div class="h-20 bg-[#0A2342]"></div>
+            <div class="p-3 text-xs">
+              <p class="font-semibold text-sm">AmeriServ Navy</p>
+              <p>HEX: #0A2342</p>
+              <p>RGB: 10, 35, 66</p>
+              <p>Use: Backgrounds, headings</p>
+            </div>
+          </div>
+          <!-- Red -->
+          <div class="rounded-xl overflow-hidden border border-white/10">
+            <div class="h-20 bg-[#B22222]"></div>
+            <div class="p-3 text-xs">
+              <p class="font-semibold text-sm">AmeriServ Red</p>
+              <p>HEX: #B22222</p>
+              <p>RGB: 178, 34, 34</p>
+              <p>Use: Buttons, accents</p>
+            </div>
+          </div>
+          <!-- Cream -->
+          <div class="rounded-xl overflow-hidden border border-white/10">
+            <div class="h-20 bg-[#F3EDE3]"></div>
+            <div class="p-3 text-xs">
+              <p class="font-semibold text-sm">Cream</p>
+              <p>HEX: #F3EDE3</p>
+              <p>RGB: 243, 237, 227</p>
+              <p>Use: Backgrounds, light text areas</p>
+            </div>
+          </div>
+          <!-- Charcoal -->
+          <div class="rounded-xl overflow-hidden border border-white/10">
+            <div class="h-20 bg-[#2E2E2E]"></div>
+            <div class="p-3 text-xs">
+              <p class="font-semibold text-sm">Charcoal</p>
+              <p>HEX: #2E2E2E</p>
+              <p>RGB: 46, 46, 46</p>
+              <p>Use: Body text, contrast</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-xl p-4 text-xs sm:text-sm text-[var(--cream)]/80">
+          <p class="font-semibold text-[var(--cream)] mb-1">
+            Accessibility & Contrast
+          </p>
+          <p>
+            When placing text over color, ensure sufficient contrast. Use cream or
+            white text on navy and red; use charcoal text on cream or very light
+            backgrounds. Avoid red-on-navy and navy-on-red for body copy.
+          </p>
+        </div>
+      </section>
+
+      <!-- 05 TYPOGRAPHY -->
+      <section id="typography" class="scroll-mt-24">
+        <p class="text-xs uppercase tracking-[0.3em] text-[var(--cream)]/60 mb-2">
+          05
+        </p>
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+          Typography System
+        </h2>
+
+        <p class="text-[var(--cream)]/80 text-sm sm:text-base max-w-2xl mb-6">
+          AmeriServ’s typography should feel clear, confident, and approachable.
+          Gotham is the hero typeface used in the logo and key headings, supported by
+          clean, legible system fonts for digital use.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="space-y-4 text-sm sm:text-base text-[var(--cream)]/80">
+            <h3 class="text-lg font-semibold">Primary Typeface</h3>
+            <p>
+              <strong>Gotham</strong> – used for logo, major headings, and key brand
+              statements.
+            </p>
+            <ul class="space-y-1">
+              <li>• Gotham Bold — Headlines & hero statements</li>
+              <li>• Gotham Medium — Subheads & callouts</li>
+              <li>• Gotham Book — Body copy in print layouts</li>
+            </ul>
+
+            <h3 class="text-lg font-semibold mt-6">Digital Fallbacks</h3>
+            <p>
+              On the web, when Gotham isn’t available, use:
+            </p>
+            <ul class="space-y-1">
+              <li>• Headings: system-ui (platform default sans-serif)</li>
+              <li>• Body: system-ui or Arial</li>
+            </ul>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-xl p-6 text-xs sm:text-sm text-[var(--cream)]/80">
+            <h3 class="text-sm font-semibold text-[var(--cream)] mb-3">
+              Type Scale (Suggested)
+            </h3>
+            <ul class="space-y-2">
+              <li><strong>Hero / H1:</strong> 48–60pt (print) / 2.5–3rem (web)</li>
+              <li><strong>H2:</strong> 32–40pt / 2–2.5rem</li>
+              <li><strong>H3:</strong> 24–30pt / 1.5–1.875rem</li>
+              <li><strong>Body:</strong> 14–16pt / ~1rem</li>
+              <li><strong>Small / Captions:</strong> 11–12pt / 0.75rem</li>
+            </ul>
+            <p class="mt-4">
+              Keep line heights generous for readability, especially in longer blocks
+              of text or on cream backgrounds.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 VISUAL STYLE -->
+      <section id="visuals" class="scroll-mt-24">
+        <p class="text-xs uppercase tracking-[0.3em] text-[var(--cream)]/60 mb-2">
+          06
+        </p>
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+
+          Visual Style & Applications
+        </h2>
+
+        <p class="text-[var(--cream)]/80 text-sm sm:text-base max-w-2xl mb-6">
+          Our visuals should feel handcrafted, real, and rooted in the community. We
+          highlight the people, processes, and pieces that make AmeriServ special.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+          <div class="space-y-4 text-sm sm:text-base text-[var(--cream)]/80">
+            <h3 class="text-lg font-semibold">Photography</h3>
+            <ul class="space-y-2">
+              <li>• Real shop scenes, presses, and hands at work</li>
+              <li>• Local businesses, churches, schools, and events</li>
+              <li>• Natural, warm light over harsh flash</li>
+              <li>• Focus on details: ink on paper, foil, texture</li>
+            </ul>
+
+            <h3 class="text-lg font-semibold mt-6">Graphic Elements</h3>
+            <ul class="space-y-2">
+              <li>• Soft circular motifs (echoing service icons on the site)</li>
+              <li>• Thin cream dividers at ~50% width for section breaks</li>
+              <li>• Subtle paper or linen textures in backgrounds</li>
+              <li>• Minimal ornament — let the work speak</li>
+            </ul>
+
+            <h3 class="text-lg font-semibold mt-6">Common Applications</h3>
+            <ul class="space-y-2">
+              <li>• Business cards & stationery systems</li>
+              <li>• Multi-part forms & envelopes</li>
+              <li>• Brochures, booklets, and flyers</li>
+              <li>• Signs, banners, and window graphics</li>
+              <li>• Promotional products & branded merch</li>
+              <li>• Wedding & event suites</li>
+            </ul>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <!-- These are placeholders you can swap with actual JPGs -->
+            <div class="bg-white/5 border border-white/10 rounded-xl h-28 sm:h-32 flex items-center justify-center text-xs text-center p-2">
+              <img
+                src="images/bc-mockup.jpg"
+                alt="AmeriServ Primary Logo"
+                class="max-h-30 w-auto pl-3 pr-3"
+              />
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl h-28 sm:h-32 flex items-center justify-center text-xs text-center p-2">
+              <span>Swap in a printshop / press room photo.</span>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl h-28 sm:h-32 flex items-center justify-center text-xs text-center p-2">
+              <span>Swap in a wedding / event print photo.</span>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl h-28 sm:h-32 flex items-center justify-center text-xs text-center p-2">
+              <span>Swap in a promo items group shot (koozies, pens, etc.).</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 ASSETS -->
+      <section id="assets" class="scroll-mt-24 pb-10">
+        <p class="text-xs uppercase tracking-[0.3em] text-[var(--cream)]/60 mb-2">
+          07
+        </p>
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+          Brand Assets & Contact
+        </h2>
+
+        <p class="text-[var(--cream)]/80 text-sm sm:text-base max-w-2xl mb-6">
+          The AmeriServ brand assets are shared so partners, vendors, and teammates
+          can represent the brand consistently and confidently across all materials.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white/5 border border-white/10 rounded-xl p-6 text-xs sm:text-sm text-[var(--cream)]/80">
+            <h3 class="text-sm font-semibold text-[var(--cream)] mb-3">
+              Included Assets
+            </h3>
+            <ul class="space-y-2">
+              <li>• Primary logo (full color) – SVG, PNG, AI/EPS</li>
+              <li>• Single-color and reversed logo versions</li>
+              <li>• Favicon / icon mark (eagle symbol, if used separately)</li>
+              <li>• Color palette codes (HEX / RGB / CMYK)</li>
+              <li>• Brand typography guidelines</li>
+              <li>• Example applications / mockups</li>
+            </ul>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-xl p-6 text-xs sm:text-sm text-[var(--cream)]/80">
+            <h3 class="text-sm font-semibold text-[var(--cream)] mb-3">
+              Usage & Requests
+            </h3>
+            <p class="mb-3">
+              For questions about using the AmeriServ brand, or to request additional
+              formats or templates, reach out to the team directly.
+            </p>
+            <p class="mb-1">
+              <span class="font-semibold text-[var(--cream)]">Email:</span>
+              support@ameriservprint.com
+            </p>
+            <p class="mb-1">
+              <span class="font-semibold text-[var(--cream)]">Phone:</span>
+              843-383-5151
+            </p>
+            <p class="mb-1">
+              <span class="font-semibold text-[var(--cream)]">Address:</span>
+              121 Darlington Ave, Hartsville, SC 29550
+            </p>
+            <p class="mt-3 text-[var(--cream)]/70">
+              When in doubt, ask — we’re always happy to help make sure the AmeriServ
+              brand is shown at its best.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </section>
+  </main>
+
+</body>
+</html>
